@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <script src="angular.min.js"></script>
+    <script src="cal.js"></script>
+    <title>my cal</title>
+  </head>
+  <body ng-app="NameCal">
+<h1>My calculator</h1>
+<div ng-controller="NameCalController">
+    <div>
+      <input type"text" ng-model="name" ng-keyup="calFunction();">
+      {{name}}
+    </div>
+    <div>
+      Total numeric value of the person is:{{totalValue}}
+    </div>
+</div>
+  </body>
+</html>
