@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <script src="angular.min.js"></script>
+    <script src="expression.js"></script>
+    <title>Expression and interpolation</title>
+  </head>
+  <body ng-app="MsgApp">
+<h1>Expreeion and interpolation</h1>
+<div ng-controller="MsgController">
+    <div>
+      Message is {{name}}
+      </br>
+      {{country()}}
+      <button type="button" ng-click="pic()">click for pic</button>
+      </br>
+    <!--  <img src="picture_of_{{pictures}}.jpg"> HTML SHOW ERROR image not found-->
+    <img ng-src="picture_of_{{pictures}}.jpg">
+    </div>
+</div>
+  </body>
+</html>
